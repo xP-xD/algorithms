@@ -1,8 +1,8 @@
-package baekjoon;
+package baekjoonClass1;
 
 import java.io.IOException;
 
-public class P1001 {
+public class P1008 {
 
 	public static void main(String[] args) {
 		int A = 0;
@@ -35,7 +35,7 @@ public class P1001 {
 			e.printStackTrace();
 		}
 		
-		System.out.println(A-B);
+		System.out.println((double)A/B);
 
 	}
 

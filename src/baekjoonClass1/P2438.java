@@ -1,26 +1,18 @@
-package baekjoon;
+package baekjoonClass1;
 
 import java.util.Scanner;
 
-public class P2439 {
+public class P2438 {
+
 	public static void main(String[] args) {
 
-		//https://www.acmicpc.net/problem/2439
-		
-		//공백도 객체로 생각하는 사고가 필요한 문제
 		Scanner scanner = new Scanner(System.in);
 		int length = scanner.nextInt();
 		
+		//별을 i줄에 줄마다 i번씩 찍기
 		for(int i=0; i<length; i++) {
 
-			int space = length-i-1;
 			int repeat = i+1;
-			
-			while(space !=0) {
-				System.out.print(" ");
-				space--;
-			}
-			
 			while(repeat !=0) {
 				System.out.print("*");
 				repeat--;

@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoonClass1;
 
 public class P2557 {
 
