@@ -17,7 +17,7 @@ public class P1546 {
 		
 		int M = 0;
 		int N = scanner.nextInt();
-		float sum = 0;
+		float total = 0;
 		float avg = 0;
 		
 		//값들을 배열에 저장
@@ -27,18 +27,17 @@ public class P1546 {
 
 		//역정렬
 		Collections.sort(numberList, Collections.reverseOrder());
-		System.out.println(numberList);
 		
 		for(Integer number : numberList) {
 			//최고점
 			M = numberList.get(0);
 			//공식 대입
 			float fixedScore = (float)number/M * 100;
-			sum += fixedScore;
+			total += fixedScore;
 			
 		}
 		
-		avg = sum/numberList.size();
+		avg = total/numberList.size();
 		
 		System.out.println(avg);
 		
